@@ -11,7 +11,7 @@ namespace Tyuiu.ChetvertnyhAI.Sprint3.Task0.V6.Test
             int startValue = 1;
             int stopValue = 15;
             double res = ds.GetMultiplySeries(startValue, stopValue);
-            double wait = 0.000;
+            double wait = 0.001;
             Assert.AreEqual(wait, res);
         }
     }

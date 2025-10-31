@@ -32,15 +32,15 @@ internal class Program
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* РЕЗУЛЬТАТ                                                               *");
         Console.WriteLine("***************************************************************************");
-        Console.WriteLine("+----------+----------+");
-        Console.WriteLine("|    X     |   f(x)   |");
-        Console.WriteLine("+----------+----------+");
+        Console.WriteLine("+----------+-----------+");
+        Console.WriteLine("|    X     |   f(x)    |");
+        Console.WriteLine("+----------+-----------+");
         for (int i = 0; i < len; i++)
         {
-            Console.WriteLine("|{0,5:d}     |  {1, 5:f2}   |", startValue, valueArray[i]);
+            Console.WriteLine("|{0,5:d}     |  {1, 6:f2}   |", startValue, valueArray[i]);
             startValue++;
         }
-        Console.WriteLine("+----------+----------+");
+        Console.WriteLine("+----------+-----------+");
         Console.ReadKey();
     }
 }

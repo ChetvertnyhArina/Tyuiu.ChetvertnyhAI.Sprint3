@@ -24,7 +24,7 @@ internal class Program
         Console.WriteLine("Старт шага = " + startValue);
         Console.WriteLine("Конец шага = " + stopValue);
 
-        int len = ds.GetMassFunction(startValue, stopValue).Length;
+        int len = ds.GetMassFunction(startValue, stopValue).Length; 
 
         double[] valueArray;
         valueArray  = new double[len];

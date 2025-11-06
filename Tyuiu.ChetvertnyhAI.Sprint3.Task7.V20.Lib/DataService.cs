@@ -12,9 +12,18 @@ namespace Tyuiu.ChetvertnyhAI.Sprint3.Task7.V20.Lib
             int count = 0;
             for (int x = startValue; x <= stopValue; x++)
             {
-                y = Math.Round(((Math.Sin(x) - 2 * x) / (3 * x - 1)) + Math.Sin(x) - 3 * x + 2, 2);
-                valueArray[count] = y;
-                count++;
+                if (((3 * x - 1) == 0))
+                {
+                    valueArray[count] = 0;
+                    count++; 
+                    
+                }
+                else
+                {
+                    y = Math.Round(((Math.Sin(x) - 2 * x) / (3 * x - 1)) + Math.Sin(x) - 3 * x + 2, 2);
+                    valueArray[count] = y;
+                    count++;
+                }
             }
             return valueArray;
         }
